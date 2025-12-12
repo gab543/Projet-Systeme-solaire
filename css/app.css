@@ -5,44 +5,55 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url("../img/wallpaper.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: #F5F5F5;
     height: 100vh;
 }
 
 .container {
     margin-top: 15%;
     width: 80%;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
-    background-color: black;
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2em
 }
-
 
 
 .blocLeft {
     width: calc(10% - (2em / 3));
-    background: #000;
-
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 2em;
+    gap: 1.8em;
+}
+
+button {
+    padding: 10px;
+    color: #050307;
+    background-color: #FFB347;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #D67A1A;
 }
 
 .blocCanvas {
     width: calc(50% - (2em / 3));
-    background: orange;
 }
 
 .blocRight {
     width: calc(40% - (2em / 3));
-    background: #000;
 }
