@@ -1,7 +1,7 @@
-import planets from "./data/planets.js";
+import getPlanets from "./data/planets.js";
 import drawSun from "./render/canvas.js";
 
-
+const planets = getPlanets();
 
 // Dessine soleil
 drawSun();
