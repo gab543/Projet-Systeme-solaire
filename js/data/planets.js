@@ -1,0 +1,12 @@
+const planets = [
+    { name: 'Mercury', color: '#a9a9a9', distance: 60, size: 8, gravity: 3.7, moons: [], angle: Math.random() * Math.PI * 2, period: 188 },
+    { name: 'Venus', color: '#d4af37', distance: 100, size: 10, gravity: 8.87, moons: [], angle: Math.random() * Math.PI * 2, period: 225 },
+    { name: 'Earth', color: '#1e90ff', distance: 140, size: 12, gravity: 9.8, moons: [], angle: Math.random() * Math.PI * 2, period: 365 },
+    { name: 'Mars', color: '#ff4500', distance: 180, size: 10, gravity: 3.71, moons: [], angle: Math.random() * Math.PI * 2, period: 687 },
+    { name: 'Jupiter', color: '#ff8c00', distance: 260, size: 20, gravity: 24.79, moons: [], angle: Math.random() * Math.PI * 2, period: 4333 },
+    { name: 'Saturn', color: '#daa520', distance: 340, size: 18, gravity: 10.44, moons: [], angle: Math.random() * Math.PI * 2, period: 10759 },
+    { name: 'Uranus', color: '#4682b4', distance: 400, size: 16, gravity: 8.69, moons: [], angle: Math.random() * Math.PI * 2, period: 30687 },
+    { name: 'Neptune', color: '#4169e1', distance: 460, size: 16, gravity: 11.15, moons: [], angle: Math.random() * Math.PI * 2, period: 35000 }
+];
+
+export default planets;
