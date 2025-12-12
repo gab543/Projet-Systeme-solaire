@@ -15,4 +15,4 @@ function iniControls(planet) {
 
 //displayInformations
 
-export default iniControls;
+export default iniControls; 
