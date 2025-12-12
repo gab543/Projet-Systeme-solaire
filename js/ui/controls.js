@@ -1,1 +1,3 @@
-const button = document.querySelectorAll("button");
+const button = document.querySelectorAll(".blocLeft button");
+
+button.addEventListener()
