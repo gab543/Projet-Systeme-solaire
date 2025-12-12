@@ -1,1 +1,1 @@
-const canvas = document.querySelector("#canvas");
+const ctx = document.querySelector("#canvas");

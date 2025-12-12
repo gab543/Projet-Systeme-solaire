@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploring Space</title>
     <link rel="stylesheet" href="app.css">
-    <script src="app.js" defer></script> // Ajouter module par la suite
+    <script src="app.js" defer></script> <!-- Ajouter module par la suite -->
 </head>
 
 <body>
 
     <div class="container">
-        <button id="mercureButton"></button>
-        <button id="venusButton"></button>
-        <button id="terreButton"></button>
-        <button id="marsButton"></button>
-        <button id="jupiterButton"></button>
-        <button id="saturneButton"></button>
-        <button id="uranusButton"></button>
-        <button id="neptuneButton"></button>
+
+        <div class="blocLeft">
+            <button id="mercureButton"></button>
+            <button id="venusButton"></button>
+            <button id="terreButton"></button>
+            <button id="marsButton"></button>
+            <button id="jupiterButton"></button>
+            <button id="saturneButton"></button>
+            <button id="uranusButton"></button>
+            <button id="neptuneButton"></button>
+        </div>
+
+        <div class="blocCanvas">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="blocRight">
+            <!---->
+        </div>
+
     </div>
 
-    <canvas id="canvas"></canvas>
 
 </body>
 
