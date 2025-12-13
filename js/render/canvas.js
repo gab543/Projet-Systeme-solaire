@@ -32,10 +32,13 @@ function draw() {
 
   // Dessin des planètes
   planets.forEach((planet) => {
+
+    //Pour changer la vitesse de rotation
     let Speed = 4;
     planet.angle += Speed / planet.period;
     let x = centerX + (planet.distance / 2) * Math.cos(planet.angle);
     let y = centerY + (planet.distance / 2) * Math.sin(planet.angle);
+
     // Dessin de la planète
     ctx.beginPath();
     ctx.arc(x, y, planet.size / 2, 0, Math.PI * 2);
