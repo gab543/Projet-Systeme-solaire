@@ -6,10 +6,10 @@ function displayInformations(planetName) {
   if (planet) {
     infoContainer.innerHTML = `
       <h2>${planet.name}</h2>
-      <img src="${planet.name}.png" alt="${planet.name}" />
-      <p id="radius">Rayon: ${planet.size}.000 km</p>
-      <p id="distance">Distance: ${planet.distance}.000.000 km</p>
-      <p id="gravity">Gravité:</p><p>${planet.gravity} m/s²</p>
+      <img src="../img/${planet.name}.png" alt="${planet.name}" />
+      <p class="title">Rayon:</p><p class="value">${planet.size}.000 km</p><br>
+      <p class="title">Distance du soleil :</p><p class="value">${planet.distance}.000.000 km</p><br>
+      <p class="title">Gravité:</p><p class="value">${planet.gravity} m/s²</p>
     `;
   }
 }

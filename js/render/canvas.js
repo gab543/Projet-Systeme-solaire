@@ -38,7 +38,6 @@ function draw() {
     ctx.fill();
   });
 }
-
 // Lancer l'animation
 function animate() {
   draw();

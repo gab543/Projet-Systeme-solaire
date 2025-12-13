@@ -60,3 +60,34 @@ button:hover {
 .blocRight {
     width: calc(40% - (2em / 3));
 }
+
+.info-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blocRight img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.blocRight .title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.blocRight .value {
+    display: inline-block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
