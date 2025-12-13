@@ -13,8 +13,7 @@ async function displayInformations(planetName) {
     infoContainer.innerHTML = `
       <h2>${planet.name}</h2>
       <img src="../img/${planet.name}.png" alt="${planet.name}" />
-      <p class="title">Lunes:</p>
-      <p class="value">${moonsText}</p><br>
+      <p class="title">Lune:</p><p class="value">${moonsText}</p><br>
       <p class="title">Rayon:</p><p class="value">${planet.size}.000 km</p><br>
       <p class="title">Distance du soleil:</p><p class="value">${planet.distance}.000.000 km</p><br>
       <p class="title">Gravité:</p><p class="value">${planet.gravity} m/s²</p>
