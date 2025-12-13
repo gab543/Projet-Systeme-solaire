@@ -21,7 +21,6 @@ const centerY = canvas.height / 2;
 // Utilisé pour savoir si une planete est deja rouge
 let activePlanet = null;
 
-
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -33,7 +32,7 @@ function draw() {
 
   // Dessin des planètes
   planets.forEach((planet) => {
-    let Speed = 6;
+    let Speed = 4;
     planet.angle += Speed / planet.period;
     let x = centerX + (planet.distance / 2) * Math.cos(planet.angle);
     let y = centerY + (planet.distance / 2) * Math.sin(planet.angle);
@@ -50,10 +49,8 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-
 //Planete cliqué === reset color ancienne planetes puis color === rouge pour nouvelle Planet
 function changedColorPlanet(planetName) {
-
   //Si / Remet a la couleur d'origine l'ancienne
   if (activePlanet) {
     activePlanet.color = activePlanet.originalColor;
@@ -72,6 +69,5 @@ function changedColorPlanet(planetName) {
     activePlanet = planet;
   }
 }
-
 
 export { animate, changedColorPlanet };
