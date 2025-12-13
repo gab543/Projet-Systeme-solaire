@@ -9,9 +9,9 @@ function iniButtons() {
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const dataPlanet = button.getAttribute("data-planet");
-
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
       changedColorPlanet(dataPlanet);
-
       displayInformations(dataPlanet);
     });
   });
