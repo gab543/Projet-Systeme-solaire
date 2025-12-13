@@ -1,7 +1,14 @@
 * {
+    align-self: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -11,7 +18,7 @@ body {
     background-position: center;
     background-size: cover;
     color: #F5F5F5;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -21,8 +28,6 @@ body {
 .container {
     width: 80%;
     height: auto;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
@@ -57,6 +62,11 @@ button:hover {
 .blocCanvas {
     width: calc(50% - (2em / 3));
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+canvas {
+    margin: 0 auto;
+    display: block;
 }
 
 .blocRight {
