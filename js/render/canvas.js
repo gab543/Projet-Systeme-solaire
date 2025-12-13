@@ -11,6 +11,11 @@ canvas.height = 500;
 const centerX = canvas.width / 2;
 const centerY = canvas.height / 2;
 
+// Sert a la function changedColorPlanet();
+// Utilisé pour savoir si une planete est deja rouge
+let activePlanet = null;
+
+
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -40,4 +45,28 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-export default animate;
+
+//Planete cliqué === reset color ancienne planetes puis color === rouge pour nouvelle Planet
+function changedColorPlanet(planetName) {
+
+  //Si / Remet a la couleur d'origine l'ancienne
+  if (activePlanet) {
+    activePlanet.color = activePlanet.originalColor;
+  }
+
+  //Récupère la planete cliqué
+  const planet = planets.find((p) => p.name === planetName);
+
+  //Colorie en rouge la nouvelle cliqué
+  if (planet) {
+    if (!planet.originalColor) {
+      planet.originalColor = planet.color;
+    }
+
+    planet.color = "red";
+    activePlanet = planet;
+  }
+}
+
+
+export { animate, changedColorPlanet };

@@ -12,6 +12,7 @@ body {
     background-size: cover;
     color: #F5F5F5;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -53,6 +54,7 @@ button:hover {
 
 .blocCanvas {
     width: calc(50% - (2em / 3));
+    background-color: #050307;
 }
 
 .blocRight {
