@@ -60,6 +60,7 @@ button:hover {
 }
 
 .blocCanvas {
+    border-radius: 20px;
     width: calc(50% - (2em / 3));
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -92,6 +93,7 @@ canvas {
 }
 
 .blocRight .title {
+    color: #D67A1A;
     display: inline-block;
     font-weight: bold;
     font-size: 1.2em;

@@ -6,8 +6,8 @@ const ctx = canvas.getContext("2d");
 const divContainer = document.querySelector(".blocCanvas");
 
 // Taille canvas
-canvas.style.width = "100%";
-canvas.style.height = "100%";
+canvas.width = 500;
+canvas.height = 500;
 
 //Syncronize taille avec parent
 canvas.width = divContainer.offsetWidth;
