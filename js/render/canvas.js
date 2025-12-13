@@ -3,9 +3,15 @@ import planets from "../data/planets.js";
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 
+const divContainer = document.querySelector(".blocCanvas");
+
 // Taille canvas
-canvas.width = 500;
-canvas.height = 500;
+canvas.style.width = "100%";
+canvas.style.height = "100%";
+
+//Syncronize taille avec parent
+canvas.width = divContainer.offsetWidth;
+canvas.height = divContainer.offsetHeight;
 
 // Pour avoir le milieu du canvas
 const centerX = canvas.width / 2;

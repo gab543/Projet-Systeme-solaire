@@ -13,10 +13,12 @@ body {
     color: #F5F5F5;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    margin-top: 15%;
     width: 80%;
     height: auto;
     margin-right: auto;
@@ -54,7 +56,7 @@ button:hover {
 
 .blocCanvas {
     width: calc(50% - (2em / 3));
-    background-color: #050307;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .blocRight {
