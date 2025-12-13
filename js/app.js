@@ -1,16 +1,13 @@
-import getPlanets from "./data/planets.js";
-import drawSun from "./render/canvas.js";
-import iniControls from "./ui/controls.js";
+import planets from "./data/planets.js";
+import animate from "./render/canvas.js";
+import iniButtons from "./ui/buttons.js";
 
-const planets = getPlanets();
-
-// Dessine soleil
-drawSun();
-
-
+console.log(planets);
 //Event au clique
-iniControls();
-
-
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("btnDefault").click();
+});
+animate();
+iniButtons();
 //Test :
 // console.log(planets);
